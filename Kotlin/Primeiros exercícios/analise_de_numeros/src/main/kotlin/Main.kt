@@ -13,11 +13,8 @@ fun main() {
         print("Digite um número: ")
         num = readLine()!!.toDouble()
         numSoma += num
-        if (num > maiorNum) {
-            maiorNum = num
-        } else if (num < menorNum) {
-            menorNum = num
-        }
+        if (num > maiorNum) maiorNum = num else if (num < menorNum && num != 0.0) menorNum = num
+        if (menorNum == 0.0) menorNum = num else if (maiorNum == 0.0) maiorNum = num
         aux++
     } while (num != 0.0)
 
