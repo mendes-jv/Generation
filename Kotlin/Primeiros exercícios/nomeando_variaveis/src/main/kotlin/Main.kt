@@ -1,27 +1,19 @@
 fun main() {
 
-    // Declaração de variáveis
-    var nome : String
-    var idade : Int = 0
-    var emprego : String
-    var pais : String
-    var sangue : String
-    var ano : Int
-
     //input de dados
     print("Digite seu nome: ")
-    nome = readLine()!!
+    var nome : String = readLine()!!
     print("Digite sua idade: ")
-    idade = readLine()!!.toInt()
+    var idade = readLine()!!.toInt()
     print("Digite sua preferência de emprego: ")
-    emprego = readLine()!!
+    var emprego : String = readLine()!!
     print("Digite sua nacionalidade: ")
-    pais = readLine()!!
+    var pais : String = readLine()!!
     print("Digite seu tipo sanguíneo: ")
-    sangue = readLine()!!
+    var sangue : String = readLine()!!
 
     //Cálculo
-    ano = 2021 - idade
+    var ano : Int = 2021 - idade
 
     //Output de respostas
     println("Seu nome é: $nome")
